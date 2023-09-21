@@ -16,6 +16,7 @@
       alt: "project thumbnail",
       projectLink: "/",
       githubLink: "/",
+      isVisible: false,
     },
     {
       name: "Todo Web App",
@@ -25,6 +26,7 @@
       alt: "project thumbnail",
       projectLink: "/",
       githubLink: "/",
+      isVisible: false,
     },
     {
       name: "Entertainment Web App",
@@ -34,6 +36,7 @@
       alt: "project thumbnail",
       projectLink: "/",
       githubLink: "/",
+      isVisible: false,
     },
     {
       name: "Memory Game",
@@ -43,6 +46,7 @@
       alt: "project thumbnail",
       projectLink: "/",
       githubLink: "/",
+      isVisible: false,
     },
     {
       name: "Art Gallery Showcase",
@@ -52,6 +56,7 @@
       alt: "project thumbnail",
       projectLink: "/",
       githubLink: "/",
+      isVisible: false,
     },
   ];
 </script>
@@ -63,11 +68,16 @@
   </div>
   {#each projects as project}
     <div class="project">
-      <picture>
+      <picture
+        class={project.isVisible ? "hover" : ""}
+        on:mouseover={() => (project.isVisible = true)}
+        on:focus={() => (project.isVisible = true)}
+        on:mouseleave={() => (project.isVisible = false)}
+        on:blur={() => (project.isVisible = false)}
+      >
         <source media="(min-width:1200px)" srcset={project.thumbnailLarge} />
         <img src={project.thumbnailSmall} alt={project.alt} />
       </picture>
-
       <h3>{project.name}</h3>
 
       <ul class="tech-stack">
@@ -75,7 +85,13 @@
           <li>{skill}</li>
         {/each}
       </ul>
-      <div class="buttons">
+      <div
+        class="buttons {project.isVisible ? 'show' : ''}"
+        on:mouseover={() => (project.isVisible = true)}
+        on:focus={() => (project.isVisible = true)}
+        on:mouseleave={() => (project.isVisible = false)}
+        on:blur={() => (project.isVisible = false)}
+      >
         <button>VIEW PROJECT</button>
         <button>VIEW CODE</button>
       </div>
@@ -136,6 +152,38 @@
 
     .top-row {
       grid-column: 1/3;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .project {
+      position: relative;
+    }
+
+    img {
+      width: 540px;
+      height: 400px;
+    }
+
+    picture {
+      background: transparent;
+    }
+    picture.hover {
+      opacity: 0.25;
+      background: #000;
+    }
+
+    .buttons {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      align-items: center;
+      top: 20%;
+      left: 35%;
+    }
+
+    .buttons.show {
+      display: flex;
     }
   }
 </style>

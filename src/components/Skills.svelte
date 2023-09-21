@@ -90,4 +90,10 @@
       display: none;
     }
   }
+
+  @media (min-width: 1200px) {
+    section {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
 </style>
