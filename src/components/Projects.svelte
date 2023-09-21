@@ -1,31 +1,86 @@
+<script>
+  let projects = [
+    {
+      name: "Design Portfolio",
+      skills: ["HTML", "CSS"],
+      thumbnailSmall: "images/thumbnail-project-1-small.webp",
+      thumbnailLarge: "images/thumbnail-project-1-large.webp",
+      projectLink: "/",
+      githubLink: "/",
+    },
+    {
+      name: "E-Learning Landing Page",
+      skills: ["HTML", "CSS"],
+      thumbnailSmall: "images/thumbnail-project-2-small.webp",
+      thumbnailLarge: "images/thumbnail-project-2-large.webp",
+      alt: "project thumbnail",
+      projectLink: "/",
+      githubLink: "/",
+    },
+    {
+      name: "Todo Web App",
+      skills: ["HTML", "CSS", "Javascript"],
+      thumbnailSmall: "images/thumbnail-project-3-small.webp",
+      thumbnailLarge: "images/thumbnail-project-3-large.webp",
+      alt: "project thumbnail",
+      projectLink: "/",
+      githubLink: "/",
+    },
+    {
+      name: "Entertainment Web App",
+      skills: ["HTML", "CSS", "Javascript"],
+      thumbnailSmall: "images/thumbnail-project-4-small.webp",
+      thumbnailLarge: "images/thumbnail-project-4-large.webp",
+      alt: "project thumbnail",
+      projectLink: "/",
+      githubLink: "/",
+    },
+    {
+      name: "Memory Game",
+      skills: ["HTML", "CSS", "Javascript"],
+      thumbnailSmall: "images/thumbnail-project-5-small.webp",
+      thumbnailLarge: "images/thumbnail-project-5-large.webp",
+      alt: "project thumbnail",
+      projectLink: "/",
+      githubLink: "/",
+    },
+    {
+      name: "Art Gallery Showcase",
+      skills: ["HTML", "CSS", "Javascript"],
+      thumbnailSmall: "images/thumbnail-project-6-small.webp",
+      thumbnailLarge: "images/thumbnail-project-6-large.webp",
+      alt: "project thumbnail",
+      projectLink: "/",
+      githubLink: "/",
+    },
+  ];
+</script>
+
 <section>
   <div class="top-row">
     <h1>Projects</h1>
     <button>CONTACT ME</button>
   </div>
-  <div class="project">
-    <picture>
-      <source
-        media="(min-width:1200px)"
-        srcset="images/thumbnail-project-1-large.webp"
-      />
-      <img
-        src="images/thumbnail-project-1-small.webp"
-        alt="project thumbnail"
-        class="thumbnail"
-      />
-    </picture>
+  {#each projects as project}
+    <div class="project">
+      <picture>
+        <source media="(min-width:1200px)" srcset={project.thumbnailLarge} />
+        <img src={project.thumbnailSmall} alt={project.alt} class="thumbnail" />
+      </picture>
 
-    <h3>DESIGN PORTFOLIO</h3>
-    <ul class="tech-stack">
-      <li>HTML</li>
-      <li>CSS</li>
-    </ul>
-    <div class="buttons">
-      <button>VIEW PROJECT</button>
-      <button>VIEW CODE</button>
+      <h3>{project.name}</h3>
+
+      <ul class="tech-stack">
+        {#each project.skills as skill}
+          <li>{skill}</li>
+        {/each}
+      </ul>
+      <div class="buttons">
+        <button>VIEW PROJECT</button>
+        <button>VIEW CODE</button>
+      </div>
     </div>
-  </div>
+  {/each}
 </section>
 
 <style>
