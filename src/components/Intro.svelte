@@ -108,7 +108,6 @@
     }
 
     h1 {
-      font-size: 72px;
       width: 445px;
       letter-spacing: -2.045px;
     }
