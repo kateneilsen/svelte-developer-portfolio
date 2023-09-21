@@ -17,8 +17,6 @@
   main {
     display: flex;
     flex-direction: column;
-    /* padding-inline: 1rem;
-    padding-block: 20px; */
     align-items: center;
   }
 </style>

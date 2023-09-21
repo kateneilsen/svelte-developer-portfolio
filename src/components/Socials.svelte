@@ -38,4 +38,10 @@
     cursor: pointer;
     z-index: 2;
   }
+
+  @media (min-width: 600px) {
+    .socials {
+      flex-direction: row;
+    }
+  }
 </style>
