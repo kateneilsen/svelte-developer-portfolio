@@ -17,7 +17,9 @@
     <button class="send">SEND MESSAGE</button>
   </form>
   <hr />
-  <Socials />
+  <span class="socials">
+    <Socials />
+  </span>
 </section>
 
 <style>
@@ -29,6 +31,7 @@
     padding-block-start: 60px;
     background-color: var(--darkgrey);
     align-items: center;
+    width: 100% !important;
   }
 
   .contact-info {
@@ -86,7 +89,29 @@
 
   @media (min-width: 1200px) {
     section {
-      flex-direction: row;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: start;
+    }
+
+    .contact-info {
+      width: 445px;
+      align-self: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+    form {
+      width: 445px;
+      align-self: flex-start;
+      margin-block-start: 0;
+    }
+    hr {
+      grid-column: 1/3;
+    }
+    span.socials {
+      grid-column: 1/3;
     }
   }
 </style>
