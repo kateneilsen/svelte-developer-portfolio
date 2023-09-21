@@ -145,6 +145,7 @@
     .intro {
       justify-content: flex-start;
       gap: 3rem;
+      width: unset;
     }
 
     h1 {
