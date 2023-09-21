@@ -125,4 +125,16 @@
     gap: 2rem;
     padding-block: 20px;
   }
+
+  @media (min-width: 768px) {
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .top-row {
+      grid-column: 1/3;
+    }
+  }
 </style>
