@@ -84,6 +84,7 @@
     hr.tablet-hr {
       display: block;
       margin-block: 3rem;
+      width: calc(100% - 4rem);
     }
     hr:not(.tablet-hr) {
       display: none;

@@ -130,6 +130,9 @@ button:hover{
 
 
 @media (min-width: 768px) {
+	section{
+		padding-inline: 0;
+	}
 	h1{
 		font-size: 72px;
 	}

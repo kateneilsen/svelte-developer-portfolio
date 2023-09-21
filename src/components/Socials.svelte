@@ -44,6 +44,15 @@
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
+      padding-inline: 2rem;
+    }
+
+    .links {
+      background: linear-gradient(
+        180deg,
+        rgba(36, 36, 36, 0) 0.65%,
+        #242424 100%
+      );
     }
   }
 </style>

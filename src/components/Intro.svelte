@@ -2,9 +2,9 @@
   import Socials from "./Socials.svelte";
 </script>
 
+<Socials />
 <section>
   <div class="gradient-bg">
-    <!-- <Socials /> -->
     <picture>
       <source
         media="(min-width: 768px)"
@@ -87,24 +87,22 @@
     section {
       display: grid;
       width: 100%;
-      justify-content: unset;
+      padding-inline: 2rem;
+      justify-content: flex-end;
       position: relative;
     }
 
     .gradient-bg {
-      grid-area: gradient-bg;
       width: fit-content;
       justify-self: flex-end;
     }
     .intro {
-      position: absolute;
-      right: 50%;
       height: 100%;
       padding-inline: 2rem;
-      grid-area: intro;
       align-items: flex-start;
       text-align: start;
       justify-content: space-between;
+      position: absolute;
     }
 
     h1 {
