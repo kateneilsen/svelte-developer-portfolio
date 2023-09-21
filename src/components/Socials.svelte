@@ -39,7 +39,7 @@
     z-index: 2;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     .socials {
       flex-direction: row;
       justify-content: space-between;

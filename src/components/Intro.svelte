@@ -14,11 +14,7 @@
         media="(min-width: 1200px)"
         srcset="images/image-profile-desktop.webp"
       />
-      <img
-        src="images/image-profile-mobile.webp"
-        alt="profile"
-        class="profile"
-      />
+      <img src="images/image-profile-mobile.webp" alt="profile" />
     </picture>
   </div>
 
@@ -57,7 +53,7 @@
     );
   }
 
-  img.profile {
+  img {
     width: 174px;
     height: 242px;
     object-fit: cover;
@@ -124,11 +120,41 @@
       display: block;
     }
 
-    img.profile {
-      width: 349.854px;
+    img {
+      width: 322px;
       height: 486px;
       object-fit: cover;
       object-position: 0 90%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    section {
+      padding-inline-start: 2rem;
+      padding-inline-end: 0;
+    }
+    img {
+      width: 445px;
+      height: 618px;
+      object-fit: cover;
+      object-position: 0 80%;
+    }
+
+    .intro {
+      justify-content: flex-start;
+      gap: 3rem;
+    }
+
+    h1 {
+      width: 100%;
+    }
+
+    br:first-of-type {
+      display: none;
+    }
+
+    br:last-of-type {
+      display: none;
     }
   }
 </style>

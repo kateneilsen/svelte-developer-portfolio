@@ -65,7 +65,7 @@
     <div class="project">
       <picture>
         <source media="(min-width:1200px)" srcset={project.thumbnailLarge} />
-        <img src={project.thumbnailSmall} alt={project.alt} class="thumbnail" />
+        <img src={project.thumbnailSmall} alt={project.alt} />
       </picture>
 
       <h3>{project.name}</h3>
@@ -101,7 +101,7 @@
     margin-block-start: 40px;
   }
 
-  img.thumbnail {
+  img {
     width: 345px;
     height: 253px;
   }

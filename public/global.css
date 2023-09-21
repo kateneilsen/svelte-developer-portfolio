@@ -128,6 +128,11 @@ button:hover{
 	color: var(--green);
 }
 
+main{
+	display: flex;
+	flex-direction: column;
+}
+
 
 @media (min-width: 768px) {
 	section{
@@ -146,6 +151,19 @@ button:hover{
 }
 
 @media (min-width: 1200px) {
+	main{
+		display: grid;
+		justify-items: center;
+		justify-content: center;
+	}
+
+	section{
+		width:1110px;
+	}
+
+	h1{
+		font-size: 88px;
+	}
 
 }
 
