@@ -105,12 +105,14 @@
     flex-direction: column;
     gap: 1rem;
     margin-block: 80px;
+    align-items: center;
   }
 
   .top-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
   }
 
   .project {
@@ -146,31 +148,41 @@
     section {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+      column-gap: 18px;
+      row-gap: 2rem;
       padding-inline: 2rem;
+      justify-items: center;
     }
 
     .top-row {
       grid-column: 1/3;
     }
-  }
-
-  @media (min-width: 768px) {
     .project {
       position: relative;
     }
 
     img {
-      width: 540px;
-      height: 400px;
+      width: 346px;
+      height: 253px;
     }
 
+    .buttons {
+      display: flex;
+    }
+  }
+
+  @media (min-width: 1200px) {
     picture {
       background: transparent;
     }
     picture.hover {
       opacity: 0.25;
       background: #000;
+    }
+
+    img {
+      width: 540px;
+      height: 400px;
     }
 
     .buttons {

@@ -3,11 +3,13 @@
 </script>
 
 <section>
-  <h1>Contact</h1>
-  <p>
-    I would love to hear about your project and how I could help. Please fill in
-    the form, and I’ll get back to you as soon as possible.
-  </p>
+  <div class="contact-info">
+    <h1>Contact</h1>
+    <p>
+      I would love to hear about your project and how I could help. Please fill
+      in the form, and I’ll get back to you as soon as possible.
+    </p>
+  </div>
   <form>
     <input type="text" id="name" placeholder="NAME" />
     <input type="text" id="name" placeholder="EMAIL" />
@@ -26,7 +28,11 @@
     text-align: center;
     padding-block-start: 60px;
     background-color: var(--darkgrey);
-    width: 100%;
+    align-items: center;
+  }
+
+  .contact-info {
+    width: 345px;
   }
 
   form {
@@ -35,6 +41,7 @@
     justify-content: space-between;
     gap: 2rem;
     margin-block-start: 50px;
+    width: 345px;
   }
 
   input,
@@ -69,10 +76,17 @@
       align-items: center;
       padding-inline: 2rem;
     }
-    h1,
-    p,
+    .contact-info {
+      width: 445px;
+    }
     form {
       width: 445px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    section {
+      flex-direction: row;
     }
   }
 </style>

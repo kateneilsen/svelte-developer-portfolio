@@ -38,6 +38,7 @@
     justify-content: center;
     text-align: center;
     gap: 40px;
+    align-items: center;
   }
   .gradient-bg {
     align-self: center;
@@ -65,6 +66,7 @@
     flex-direction: column;
     gap: 24px;
     align-items: center;
+    width: 345px;
   }
 
   .underline {
