@@ -25,6 +25,7 @@
     gap: 1.25rem;
     align-items: center;
     width: fit-content;
+    align-self: center;
   }
   .links {
     display: flex;

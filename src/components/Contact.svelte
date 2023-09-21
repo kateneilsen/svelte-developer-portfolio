@@ -1,3 +1,7 @@
+<script>
+  import Socials from "./Socials.svelte";
+</script>
+
 <section>
   <h1>Contact</h1>
   <p>
@@ -11,6 +15,7 @@
     <button class="send">SEND MESSAGE</button>
   </form>
   <hr />
+  <Socials />
 </section>
 
 <style>
@@ -19,7 +24,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-block: 60px;
+    padding-block-start: 60px;
     background-color: var(--darkgrey);
     width: 100%;
   }
@@ -54,5 +59,8 @@
 
   hr {
     margin-block-start: 87px;
+  }
+  hr:last-of-type {
+    margin-block-end: 20px;
   }
 </style>

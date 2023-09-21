@@ -3,6 +3,7 @@
   import Intro from "./components/Intro.svelte";
   import Projects from "./components/Projects.svelte";
   import Skills from "./components/Skills.svelte";
+  import Socials from "./components/Socials.svelte";
 </script>
 
 <main>
