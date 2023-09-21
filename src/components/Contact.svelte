@@ -63,4 +63,16 @@
   hr:last-of-type {
     margin-block-end: 20px;
   }
+
+  @media (min-width: 768px) {
+    section {
+      align-items: center;
+      padding-inline: 2rem;
+    }
+    h1,
+    p,
+    form {
+      width: 445px;
+    }
+  }
 </style>

@@ -42,6 +42,8 @@
   @media (min-width: 600px) {
     .socials {
       flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
     }
   }
 </style>

@@ -131,6 +131,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
+      padding-inline: 2rem;
     }
 
     .top-row {
