@@ -1,32 +1,27 @@
-<header>
-  <h4>adamkeyes</h4>
-  <div class="socials">
-    <a href="/">
-      <img src="images/icon-github.svg" alt="github" />
-    </a>
-    <a href="/">
-      <img src="images/icon-frontend-mentor.svg" alt="frontend mentor" />
-    </a>
-    <a href="/">
-      <img src="images/icon-linkedin.svg" alt="linkedin" />
-    </a>
-    <a href="/">
-      <img src="images/icon-twitter.svg" alt="twitter" />
-    </a>
-  </div>
-</header>
+<script>
+  import Socials from "./Socials.svelte";
+</script>
+
 <section>
-  <picture>
-    <source
-      media="(min-width: 600px)"
-      srcset="images/image-profile-tablet.webp"
-    />
-    <source
-      media="(min-width: 1200px)"
-      srcset="images/image-profile-desktop.webp"
-    />
-    <img src="images/image-profile-mobile.webp" alt="profile" class="profile" />
-  </picture>
+  <div class="gradient-bg">
+    <Socials />
+    <picture>
+      <source
+        media="(min-width: 600px)"
+        srcset="images/image-profile-tablet.webp"
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcset="images/image-profile-desktop.webp"
+      />
+      <img
+        src="images/image-profile-mobile.webp"
+        alt="profile"
+        class="profile"
+      />
+    </picture>
+  </div>
+
   <div class="intro">
     <h1>
       Nice to meet you! <br />
@@ -42,25 +37,26 @@
 
 <style>
   section {
-    text-align: center;
-  }
-  header {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
-    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
   }
-  .socials {
+  .gradient-bg {
+    align-self: center;
     display: flex;
+    flex-direction: column;
     width: 174px;
     padding-inline: 4px;
     justify-content: space-between;
+    background: linear-gradient(
+      180deg,
+      rgba(36, 36, 36, 0) 0.65%,
+      #242424 100%
+    );
   }
 
-  a {
-    cursor: pointer;
-    z-index: 2;
-  }
   img.profile {
     width: 174px;
     height: 242px;

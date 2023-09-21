@@ -51,6 +51,10 @@
     height: 253px;
   }
 
+  h3 {
+    padding-block-start: 20px;
+  }
+
   ul.tech-stack {
     padding-block: 0.5rem;
     padding-inline: 0;
