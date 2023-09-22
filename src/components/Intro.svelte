@@ -39,6 +39,7 @@
     justify-content: center;
     text-align: center;
     align-items: center;
+    z-index: 2;
   }
 
   .gradient-bg {

@@ -61,10 +61,6 @@ main{
 	background-color: var(--black);
 }
 
-section{
-	padding-inline: 1rem;
-}
-
 hr{
 	margin: 0;
 	padding: 0;
@@ -135,6 +131,49 @@ main{
 }
 
 
+.intro-circle{
+	position: absolute;
+	background-image: url("./images/pattern-circle.svg");
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	background-position-x: 125%;
+	background-position-y: 4.5%; 
+	z-index: 2;
+}
+
+.intro-rings{
+	position: absolute;
+	background-image: url("./images/pattern-rings.svg");
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	background-position-x: 220%;
+	background-position-y: 2%;
+
+}
+
+.skill-rings{
+	position: absolute;
+	background-image: url("./images/pattern-rings.svg");
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	background-position-x: -150%;
+	background-position-y: 26%;
+
+}
+.contact-rings{
+	position: absolute;
+	background-image: url("./images/pattern-rings.svg");
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	background-position-x: 220%;
+	background-position-y: 95.75%;
+}
+
+
 @media (min-width: 768px) {
 	section{
 		padding-inline: 0;
@@ -158,7 +197,7 @@ main{
 	}
 	
 	.intro-rings{
-		position: absolute;
+		position: absolutfe;
 		background-image: url("./images/pattern-rings.svg");
 		background-repeat: no-repeat;
 		height: 100%;
@@ -205,5 +244,48 @@ main{
 	:root{
 		--font-size-xl:88px;
 	}
+
+	.intro-circle{
+		position: absolute;
+		background-image: url("./images/pattern-circle.svg");
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+		background-position-x: 60%;
+		background-position-y: 15%; 
+
+	}
+	
+	.intro-rings{
+		position: absolute;
+		background-image: url("./images/pattern-rings.svg");
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+		background-position-x: -10%;
+		background-position-y: 2%;
+
+	}
+
+	.skill-rings{
+		position: absolute;
+		background-image: url("./images/pattern-rings.svg");
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+		background-position-x: 130%;
+		background-position-y: 28%;
+	}
+	.contact-rings{
+		position: absolute;
+		background-image: url("./images/pattern-rings.svg");
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+		background-position-x: -20%;
+		background-position-y: 96.5%;
+	
+	}
+	
 }
 

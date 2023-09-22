@@ -62,6 +62,7 @@
     text-align: center;
     padding-block-start: 60px;
     background-color: var(--darkgrey);
+    background-repeat: repeat-x;
     align-items: center;
     width: 100% !important;
   }
@@ -128,6 +129,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       text-align: start;
+      padding-inline: 0;
     }
 
     .contact-info {
@@ -140,7 +142,6 @@
     form {
       width: 445px;
       align-self: flex-start;
-      margin-block-start: 0;
     }
     hr {
       grid-column: 1/3;
