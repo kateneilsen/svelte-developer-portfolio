@@ -129,7 +129,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       text-align: start;
-      padding-inline: 0;
+      padding-inline-start: 2rem;
     }
 
     .contact-info {
