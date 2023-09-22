@@ -17,6 +17,7 @@
     <button class="send">SEND MESSAGE</button>
   </form>
   <hr />
+  <h4>adamkeyes</h4>
   <span class="socials">
     <Socials />
   </span>
@@ -110,8 +111,12 @@
     hr {
       grid-column: 1/3;
     }
+    h4 {
+      grid-column: 1/2;
+    }
     span.socials {
-      grid-column: 1/3;
+      grid-column: 2/3;
+      justify-self: flex-end;
     }
   }
 </style>

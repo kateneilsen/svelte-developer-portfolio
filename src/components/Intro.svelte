@@ -2,9 +2,10 @@
   import Socials from "./Socials.svelte";
 </script>
 
-<Socials />
 <section>
+  <h4 class="mobile">adamkeyes</h4>
   <div class="gradient-bg">
+    <Socials />
     <picture>
       <source
         media="(min-width: 768px)"
@@ -40,14 +41,12 @@
     gap: 40px;
     align-items: center;
   }
+
   .gradient-bg {
-    align-self: center;
     display: flex;
     flex-direction: column;
-    width: 174px;
-    padding-inline: 4px;
-    justify-content: space-between;
-    background: linear-gradient(
+    gap: 20px;
+    background-image: linear-gradient(
       180deg,
       rgba(36, 36, 36, 0) 0.65%,
       #242424 100%
@@ -85,22 +84,35 @@
     section {
       display: grid;
       width: 100%;
-      padding-inline: 2rem;
       justify-content: flex-end;
       position: relative;
+    }
+
+    h4 {
+      position: absolute;
+      top: 20px;
+      left: 2rem;
     }
 
     .gradient-bg {
       width: fit-content;
       justify-self: flex-end;
+      align-items: flex-end;
+      background-image: linear-gradient(
+        1deg,
+        rgba(36, 36, 36, 0) 0.65%,
+        #242424 100%
+      );
+      background-origin: border-box;
     }
     .intro {
       height: 100%;
       padding-inline: 2rem;
       align-items: flex-start;
       text-align: start;
-      justify-content: space-between;
       position: absolute;
+      gap: 2rem;
+      bottom: -110px;
     }
 
     h1 {
@@ -124,9 +136,9 @@
 
     img {
       width: 322px;
-      height: 486px;
+      height: 500px;
       object-fit: cover;
-      object-position: 0 90%;
+      /* object-position: 0 100%; */
     }
   }
 
