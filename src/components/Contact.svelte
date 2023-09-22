@@ -1,5 +1,21 @@
 <script>
   import Socials from "./Socials.svelte";
+  import Input from "./Input.svelte";
+
+  let isValidEmail;
+  let isValidName;
+  let email;
+  let name;
+
+  const validateForm = () => {
+    console.log(email);
+    isValidEmail = email
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+    isValidName = name.length >= 3;
+  };
 </script>
 
 <section>
@@ -10,11 +26,25 @@
       in the form, and I’ll get back to you as soon as possible.
     </p>
   </div>
-  <form>
-    <input type="text" id="name" placeholder="NAME" />
-    <input type="text" id="name" placeholder="EMAIL" />
+  <form novalidate on:submit|preventDefault={validateForm}>
+    <Input
+      type="text"
+      id="name"
+      placeholder="Name"
+      bind:value={name}
+      isValid={isValidName}
+      error="Sorry, invalid format here"
+    />
+    <Input
+      type="email"
+      id="email"
+      placeholder="Email"
+      isValid={isValidEmail}
+      error="Sorry, invalid format here"
+      bind:value={email}
+    />
     <textarea id="message" placeholder="MESSAGE" />
-    <button class="send">SEND MESSAGE</button>
+    <button type="submit" class="send">SEND MESSAGE</button>
   </form>
   <hr />
   <h4>adamkeyes</h4>
@@ -47,8 +77,6 @@
     margin-block-start: 50px;
     width: 345px;
   }
-
-  input,
   textarea {
     border: none;
     border-bottom: 1px solid var(--white);
@@ -62,6 +90,11 @@
   textarea {
     resize: none;
     height: 107px;
+  }
+
+  textarea:focus {
+    outline: none;
+    border-bottom: 1px solid var(--green);
   }
 
   button.send {
