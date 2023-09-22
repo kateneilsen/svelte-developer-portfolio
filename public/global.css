@@ -131,6 +131,7 @@ button:hover{
 main{
 	display: flex;
 	flex-direction: column;
+	position: relative;
 }
 
 
@@ -144,6 +145,49 @@ main{
 		--font-size-m: 2rem;
 		--font-size-s: 18px;
 	}
+
+	.intro-circle{
+		position: absolute;
+		background-image: url("./images/pattern-circle.svg");
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+		background-position-x: 110%;
+		background-position-y: 13%; 
+
+	}
+	
+	.intro-rings{
+		position: absolute;
+		background-image: url("./images/pattern-rings.svg");
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+		background-position-x: -120%;
+		background-position-y: 1.7%;
+
+	}
+
+	.skill-rings{
+		position: absolute;
+		background-image: url("./images/pattern-rings.svg");
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+		background-position-x: 250%;
+		background-position-y: 28%;
+
+	}
+	.contact-rings{
+		position: absolute;
+		background-image: url("./images/pattern-rings.svg");
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+		background-position-x: -160%;
+		background-position-y: 96%;
+	}
+
 
 }
 

@@ -7,8 +7,12 @@
 </script>
 
 <main>
+  <div class="intro-rings" />
   <Intro />
+  <div class="intro-circle" />
   <Skills />
+  <div class="skill-rings" />
   <Projects />
   <Contact />
+  <div class="contact-rings" />
 </main>

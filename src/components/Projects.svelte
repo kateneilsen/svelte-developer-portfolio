@@ -104,7 +104,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-block: 80px;
+    padding-block: 80px;
     align-items: center;
   }
 
