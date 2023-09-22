@@ -14,7 +14,7 @@
       .match(
         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       );
-    isValidName = name.length >= 3;
+    isValidName = name.length >= 1;
   };
 </script>
 
@@ -29,18 +29,19 @@
   <form novalidate on:submit|preventDefault={validateForm}>
     <Input
       type="text"
+      le
       id="name"
       placeholder="Name"
       bind:value={name}
       isValid={isValidName}
-      error="Sorry, invalid format here"
+      error="Sorry, your name is required."
     />
     <Input
       type="email"
       id="email"
       placeholder="Email"
       isValid={isValidEmail}
-      error="Sorry, invalid format here"
+      error="Sorry, invalid format here."
       bind:value={email}
     />
     <textarea id="message" placeholder="MESSAGE" />
