@@ -79,7 +79,7 @@
 
     hr.tablet-hr {
       display: block;
-      margin-block: 5rem;
+      margin-block: 6rem;
       align-self: center;
     }
     hr:not(.tablet-hr) {
