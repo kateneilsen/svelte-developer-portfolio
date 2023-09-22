@@ -114,7 +114,7 @@
       text-align: start;
       position: absolute;
       gap: 2rem;
-      bottom: -110px;
+      top: 120px;
     }
 
     h1 {

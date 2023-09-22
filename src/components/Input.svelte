@@ -1,7 +1,4 @@
 <script>
-  import { createEventDispatcher } from "svelte";
-  const dispatch = createEventDispatcher();
-
   export let id;
   export let placeholder;
   export let type;

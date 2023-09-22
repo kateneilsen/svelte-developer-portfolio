@@ -36,7 +36,7 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    margin-block-start: 80px;
+    margin-block-start: 100px;
   }
 
   div.skill:first-of-type {
@@ -79,7 +79,7 @@
 
     hr.tablet-hr {
       display: block;
-      margin-block: 3rem;
+      margin-block: 5rem;
       align-self: center;
     }
     hr:not(.tablet-hr) {
