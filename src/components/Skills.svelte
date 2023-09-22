@@ -62,10 +62,6 @@
       margin-block: 0;
     }
 
-    h2 {
-      font-size: 48px;
-    }
-
     section::before {
       background: var(--white);
       height: 1px;

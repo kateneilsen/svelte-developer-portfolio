@@ -138,14 +138,11 @@ main{
 	section{
 		padding-inline: 0;
 	}
-	h1{
-		font-size: 72px;
-	}
-	h2{
-		font-size: 48px;
-	}
-	p{
-		font-size: 18px;
+	:root{
+		--font-size-xl:72px;
+		--font-size-l: 3rem;
+		--font-size-m: 2rem;
+		--font-size-s: 18px;
 	}
 
 }
@@ -161,9 +158,8 @@ main{
 		max-width:1110px;
 	}
 
-	h1{
-		font-size: 88px;
+	:root{
+		--font-size-xl:88px;
 	}
-
 }
 

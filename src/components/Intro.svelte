@@ -38,7 +38,6 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 40px;
     align-items: center;
   }
 
@@ -61,6 +60,7 @@
   }
 
   .intro {
+    padding-block-start: 40px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -108,6 +108,7 @@
     .intro {
       height: 100%;
       padding-inline: 2rem;
+      padding-block-start: 0;
       align-items: flex-start;
       text-align: start;
       position: absolute;
@@ -138,7 +139,6 @@
       width: 322px;
       height: 500px;
       object-fit: cover;
-      /* object-position: 0 100%; */
     }
   }
 
