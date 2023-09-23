@@ -18,41 +18,43 @@
   };
 </script>
 
-<section>
-  <div class="contact-info">
-    <h1>Contact</h1>
-    <p>
-      I would love to hear about your project and how I could help. Please fill
-      in the form, and I’ll get back to you as soon as possible.
-    </p>
-  </div>
-  <form novalidate on:submit|preventDefault={validateForm}>
-    <Input
-      type="text"
-      le
-      id="name"
-      placeholder="Name"
-      bind:value={name}
-      isValid={isValidName}
-      error="Sorry, your name is required."
-    />
-    <Input
-      type="email"
-      id="email"
-      placeholder="Email"
-      isValid={isValidEmail}
-      error="Sorry, invalid format here."
-      bind:value={email}
-    />
-    <textarea id="message" placeholder="MESSAGE" />
-    <button type="submit" class="send">SEND MESSAGE</button>
-  </form>
-  <hr />
-  <h4>adamkeyes</h4>
-  <span class="socials">
-    <Socials />
-  </span>
-</section>
+<div class="background">
+  <section>
+    <div class="contact-info">
+      <h1>Contact</h1>
+      <p>
+        I would love to hear about your project and how I could help. Please
+        fill in the form, and I’ll get back to you as soon as possible.
+      </p>
+    </div>
+    <form novalidate on:submit|preventDefault={validateForm}>
+      <Input
+        type="text"
+        le
+        id="name"
+        placeholder="Name"
+        bind:value={name}
+        isValid={isValidName}
+        error="Sorry, your name is required."
+      />
+      <Input
+        type="email"
+        id="email"
+        placeholder="Email"
+        isValid={isValidEmail}
+        error="Sorry, invalid format here."
+        bind:value={email}
+      />
+      <textarea id="message" placeholder="MESSAGE" />
+      <button type="submit" class="send">SEND MESSAGE</button>
+    </form>
+    <hr />
+    <h4>adamkeyes</h4>
+    <span class="socials">
+      <Socials />
+    </span>
+  </section>
+</div>
 
 <style>
   section {
@@ -125,6 +127,15 @@
   }
 
   @media (min-width: 1200px) {
+    .background {
+      width: 100vw;
+      background-color: var(--darkgrey);
+      width: 100vw;
+      background-color: var(--darkgrey);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     section {
       width: 100%;
       display: grid;

@@ -66,10 +66,6 @@ body{
 	width: 100vw;
 }
 
-/* main{
-	background-color: var(--black);
-} */
-
 hr{
 	margin: 0;
 	padding: 0;
@@ -139,6 +135,9 @@ main{
 	position: relative;
 }
 
+section{
+	max-width: 1110px;
+}
 
 .intro-circle{
 	position: absolute;
@@ -244,10 +243,6 @@ main{
 		display: grid;
 		justify-items: center;
 		justify-content: center;
-	}
-
-	section:not(section:last-of-type){
-		max-width:1110px;
 	}
 
 	:root{
