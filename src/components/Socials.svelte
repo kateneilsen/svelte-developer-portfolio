@@ -46,7 +46,7 @@
 
   a {
     cursor: pointer;
-    z-index: 2;
+    z-index: 10;
   }
 
   a:hover svg:hover path:hover {

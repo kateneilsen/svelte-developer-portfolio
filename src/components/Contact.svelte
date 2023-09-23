@@ -78,6 +78,7 @@
     gap: 2rem;
     margin-block-start: 50px;
     width: 345px;
+    z-index: 3;
   }
   textarea {
     border: none;

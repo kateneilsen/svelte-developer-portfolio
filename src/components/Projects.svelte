@@ -106,6 +106,7 @@
     gap: 1rem;
     padding-block: 80px;
     align-items: center;
+    z-index: 3;
   }
 
   .top-row {
