@@ -57,9 +57,18 @@ textarea, select {
 	--font-weight-medium: 500;
 }
 
-main{
+body{
 	background-color: var(--black);
 }
+
+#contact{
+	background-color: var(--darkgrey);
+	width: 100vw;
+}
+
+/* main{
+	background-color: var(--black);
+} */
 
 hr{
 	margin: 0;
@@ -237,7 +246,7 @@ main{
 		justify-content: center;
 	}
 
-	section{
+	section:not(section:last-of-type){
 		max-width:1110px;
 	}
 
